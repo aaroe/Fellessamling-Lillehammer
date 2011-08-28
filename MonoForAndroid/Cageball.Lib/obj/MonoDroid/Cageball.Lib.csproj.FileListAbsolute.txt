@@ -1,0 +1,12 @@
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\bin\MonoDroid\Cageball.Lib.dll
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\bin\MonoDroid\Cageball.Lib.pdb
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\bin\MonoDroid\Cageball.Lib.dll.mdb
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\bin\MonoDroid\Cageball.Lib.apk
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\bin\MonoDroid\Cageball.Lib-Signed.apk
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\obj\MonoDroid\ResolveAssemblyReference.cache
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\obj\MonoDroid\Cageball.Lib.dll
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\obj\MonoDroid\Cageball.Lib.pdb
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\obj\MonoDroid\android\bin\Cageball.Lib.apk
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\obj\MonoDroid\R.cs.flag
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\obj\MonoDroid\debug.keystore
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\MonoForAndroid\Cageball.Lib\obj\MonoDroid\uploadflags.txt

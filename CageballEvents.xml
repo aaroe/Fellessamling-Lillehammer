@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CageballEvents>
+  <CageballEvent Id="ALF" Location="Sluppen" Tid="01.10.2011 17:00:00" />
+  <CageballEvent Id="ANX" Location="Solsiden" Tid="08.10.2011 17:00:00" />
+  <CageballEvent Id="BDU" Location="Sluppen" Tid="15.10.2011 17:00:00" />
+  <CageballEvent Id="BGO" Location="Solsiden" Tid="22.10.2011 15:00:00" />
+  <CageballEvent Id="BVG" Location="Sluppen" Tid="29.10.2011 17:00:00" />
+  <CageballEvent Id="BOO" Location="Solsiden" Tid="5.11.2011 11:00:00" />
+  <CageballEvent Id="BNN" Location="Sluppen" Tid="12.11.2011 19:00:00" />
+  <CageballEvent Id="BJF" Location="Solsiden" Tid="19.11.2011 17:00:00" />
+  <CageballEvent id="DLD" Location="Sluppen" Tid="26.11.2011 17:00:00" />
+</CageballEvents>

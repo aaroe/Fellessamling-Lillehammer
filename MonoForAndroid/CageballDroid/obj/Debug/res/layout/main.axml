@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+  <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cageball" />
+  <Button android:id="@+id/allCageballEvents_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Treninger" />
+  <!--android:onClick="startCageBallEvents"-->
+  <Button android:id="@+id/myCageballEvents_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Mine Treninger" />
+  <Button android:id="@+id/createCageballEvent_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Opprett trening" />
+</LinearLayout>

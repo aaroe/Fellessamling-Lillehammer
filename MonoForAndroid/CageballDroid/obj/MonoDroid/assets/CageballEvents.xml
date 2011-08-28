@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CageballEvents>
+  <CageballEvent Id="1" Location="Sluppen" Time="01.10.2011 17:00" Signed="true" />
+  <CageballEvent Id="2" Location="Solsiden" Time="08.31.2011 17:00" Signed="false" />
+  <CageballEvent Id="3" Location="Nidar%C3%B8" Time="01.10.2011 17:00" Signed="false" />
+  <CageballEvent Id="4" Location="Solsiden" Time="08.10.2011 17:00" Signed="false" />
+  <CageballEvent Id="5" Location="Sluppen" Time="01.10.2011 17:00" Signed="false" />
+  <CageballEvent Id="6" Location="Solsiden" Time="08.10.2011 17:00" Signed="false" />
+  <CageballEvent Id="7" Location="Nidar%C3%B8nn" Time="01.10.2011 17:00" Signed="false" />
+  <CageballEvent Id="8" Location="Solsiden" Time="08.10.2011 17:00" Signed="false" />
+  <CageballEvent Id="9" Location="Sluppen" Time="01.10.2011 17:00" Signed="false" />
+  <CageballEvent Id="10" Location="Solsiden" Time="08.10.2011 17:00" Signed="false" />
+  <CageballEvent Id="11" Location="Sluppen" Time="01.10.2011 17:00" Signed="false" />
+  <CageballEvent Id="12" Location="Solsiden" Time="08.10.2011 17:00" Signed="false "/>
+</CageballEvents>

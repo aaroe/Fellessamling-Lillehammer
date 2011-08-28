@@ -1,0 +1,7 @@
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\Cageball\obj\MonoDroid\ResolveAssemblyReference.cache
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\Cageball\obj\MonoDroid\App.g.i.cs
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\Cageball\obj\MonoDroid\MainPage.g.i.cs
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\Cageball\obj\MonoDroid\Views\AllCageballEventsView.g.i.cs
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\Cageball\obj\MonoDroid\Views\MyCageballEventsView.g.i.cs
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\Cageball\obj\MonoDroid\Views\SignedCageballEvent.g.i.cs
+C:\Users\nooyvaar\documents\visual studio 2010\Projects\CageballAcando\Cageball\obj\MonoDroid\Cageball.g.resources

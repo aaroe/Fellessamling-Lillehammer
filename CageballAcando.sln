@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowsPhone", "WindowsPhone", "{604160C3-2339-43A5-BF8E-1D6DFC472BD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MonoForAndroid", "MonoForAndroid", "{C11BCF0D-4FB3-4EFA-92BE-66D704425356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cageball.Lib", "..\WhindowsPhone\CageballAcando\Cageball.Lib\Cageball.Lib.csproj", "{698AB16D-AEDA-40D4-BB29-0C1D79CC719D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cageball", "Cageball\Cageball.csproj", "{45D543C8-FF80-4C1F-8F26-85BD610330C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cageball.Lib", "MonoForAndroid\Cageball.Lib\Cageball.Lib.csproj", "{A19D0197-13D5-4E54-AD73-0D88B82486CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CageballDroid", "MonoForAndroid\CageballDroid\CageballDroid.csproj", "{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		MonoDroid|Any CPU = MonoDroid|Any CPU
+		Release|Any CPU = Release|Any CPU
+		WP7|Any CPU = WP7|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{698AB16D-AEDA-40D4-BB29-0C1D79CC719D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698AB16D-AEDA-40D4-BB29-0C1D79CC719D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698AB16D-AEDA-40D4-BB29-0C1D79CC719D}.MonoDroid|Any CPU.ActiveCfg = MonoDroid|Any CPU
+		{698AB16D-AEDA-40D4-BB29-0C1D79CC719D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698AB16D-AEDA-40D4-BB29-0C1D79CC719D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698AB16D-AEDA-40D4-BB29-0C1D79CC719D}.WP7|Any CPU.ActiveCfg = WP7|Any CPU
+		{698AB16D-AEDA-40D4-BB29-0C1D79CC719D}.WP7|Any CPU.Build.0 = WP7|Any CPU
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5}.MonoDroid|Any CPU.ActiveCfg = MonoDroid|Any CPU
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5}.WP7|Any CPU.ActiveCfg = WP7|Any CPU
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5}.WP7|Any CPU.Build.0 = WP7|Any CPU
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5}.WP7|Any CPU.Deploy.0 = WP7|Any CPU
+		{A19D0197-13D5-4E54-AD73-0D88B82486CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19D0197-13D5-4E54-AD73-0D88B82486CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19D0197-13D5-4E54-AD73-0D88B82486CD}.MonoDroid|Any CPU.ActiveCfg = MonoDroid|Any CPU
+		{A19D0197-13D5-4E54-AD73-0D88B82486CD}.MonoDroid|Any CPU.Build.0 = MonoDroid|Any CPU
+		{A19D0197-13D5-4E54-AD73-0D88B82486CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19D0197-13D5-4E54-AD73-0D88B82486CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19D0197-13D5-4E54-AD73-0D88B82486CD}.WP7|Any CPU.ActiveCfg = WP7|Any CPU
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}.MonoDroid|Any CPU.ActiveCfg = MonoDroid|Any CPU
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}.MonoDroid|Any CPU.Build.0 = MonoDroid|Any CPU
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}.MonoDroid|Any CPU.Deploy.0 = MonoDroid|Any CPU
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3}.WP7|Any CPU.ActiveCfg = WP7|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{698AB16D-AEDA-40D4-BB29-0C1D79CC719D} = {604160C3-2339-43A5-BF8E-1D6DFC472BD4}
+		{45D543C8-FF80-4C1F-8F26-85BD610330C5} = {604160C3-2339-43A5-BF8E-1D6DFC472BD4}
+		{A19D0197-13D5-4E54-AD73-0D88B82486CD} = {C11BCF0D-4FB3-4EFA-92BE-66D704425356}
+		{E8FE626D-3772-4793-BE5F-E2A07FF9DFA3} = {C11BCF0D-4FB3-4EFA-92BE-66D704425356}
+	EndGlobalSection
+EndGlobal
