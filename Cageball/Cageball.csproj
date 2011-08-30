@@ -83,6 +83,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DispatchAdapter.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -90,6 +91,7 @@
     <Compile Include="Views\AllCageballEventsView.xaml.cs">
       <DependentUpon>AllCageballEventsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CageballEventHelper.cs" />
     <Compile Include="Views\MyCageballEventsView.xaml.cs">
       <DependentUpon>MyCageballEventsView.xaml</DependentUpon>
     </Compile>
@@ -130,7 +132,7 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="Content\CageballEvents.xml" />
+    <Resource Include="Content\CageballEvents.xml" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>

@@ -46,7 +46,7 @@
                          Margin="8,8,8,8" Name="_myCageballevents" 
                          SelectionChanged="_myCageballevents_SelectionChanged" 
                          ItemContainerStyle="{StaticResource ListBoxItemStyle1}"
-                         ItemsSource="{Binding Path=MyCageballEvents}"
+                         ItemsSource="{Binding Path=CageballEvents}"
                          SelectedItem="{Binding Path=SelectedCageballEvent, Mode=TwoWay}"      />
                 <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
                     <Button  Name="BackBtn" Content="Tilbake" Click="BackBtn_Click" Width="200" ></Button>

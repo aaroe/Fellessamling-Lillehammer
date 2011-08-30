@@ -18,7 +18,7 @@ namespace Cageball.Views
 {
     public partial class MyCageballEventsView : PhoneApplicationPage
     {
-        MyCageballEventsViewModel _viewModel;
+        CageballEventsViewModel _viewModel;
 
         public MyCageballEventsView()
         {
@@ -29,16 +29,8 @@ namespace Cageball.Views
         
         void MyCageballEventsView_Loaded(object sender, RoutedEventArgs e)
         {
- 
-
-            var service = new CageballService();
-            var fileUri = new Uri("Cageball;component/Content/CageballEvents.xml", UriKind.Relative);
-
-            using (var stream = Application.GetResourceStream(fileUri).Stream)
-            {
-                _viewModel = new MyCageballEventsViewModel(stream);
-                DataContext = _viewModel;
-            }
+            _viewModel = CageballEventHelper.SetCageballEvents();
+            DataContext = _viewModel;
 
         }
 
@@ -59,7 +51,7 @@ namespace Cageball.Views
 
             if (entry != null)
             {
-                Uri sigedCageballEvent = new Uri(string.Format("/../Views/SignedCageballEvent.xaml?id={0}&meldMeg={1}", entry.Id, " av"), UriKind.Relative);
+                Uri sigedCageballEvent = new Uri(string.Format("/../Views/SignedCageballEventView.xaml?id={0}&signUp={1}", entry.Id, false), UriKind.Relative);
                 NavigationService.Navigate(sigedCageballEvent);
             }
         }

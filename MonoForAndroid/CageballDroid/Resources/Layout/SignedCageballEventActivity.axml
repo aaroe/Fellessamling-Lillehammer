@@ -8,7 +8,7 @@
   <TextView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="Cageball"
+    android:text=""
     android:height="100dp"
     />
 
@@ -16,7 +16,7 @@
     android:id="@+id/sign_button"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="Meld meg på!"
+    android:text="Meld meg"
     android:height="100dp"
  
     />
@@ -26,7 +26,7 @@
      android:id="@+id/signed_text"
      android:layout_width="fill_parent"
      android:layout_height="wrap_content"
-     android:text="Cageball"
+     android:text=""
     />
   
 </LinearLayout>

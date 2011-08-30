@@ -20,7 +20,7 @@ namespace Cageball
         public MainPage()
         {
             InitializeComponent();
-         
+            CageballService.Dispatcher = new DispatchAdapter();
         }
 
         void AllCageballEventsBtn_Click(object sender, RoutedEventArgs e)

@@ -66,17 +66,17 @@
     <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\DataServices\CageballService.cs">
       <Link>DataServices\CageballService.cs</Link>
     </Compile>
+    <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\IDispatchOnUIThread.cs">
+      <Link>IDispatchOnUIThread.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\Model\CageballEvent.cs">
       <Link>Model\CageballEvent.cs</Link>
     </Compile>
     <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\Model\HendelseRetur.cs">
       <Link>Model\HendelseRetur.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\ViewModel\AllCageballEventsViewModel.cs">
-      <Link>ViewModel\AllCageballEventsViewModel.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\ViewModel\MyCageballEventsViewModel.cs">
-      <Link>ViewModel\MyCageballEventsViewModel.cs</Link>
+    <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\ViewModel\CageballEventsViewModel.cs">
+      <Link>ViewModel\CageballEventsViewModel.cs</Link>
     </Compile>
     <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\ViewModel\SignedCageballEventViewModel.cs">
       <Link>ViewModel\SignedCageballEventViewModel.cs</Link>
@@ -90,7 +90,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="698ab16d-aeda-40d4-bb29-0c1d79cc719d" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="698ab16d-aeda-40d4-bb29-0c1d79cc719d" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

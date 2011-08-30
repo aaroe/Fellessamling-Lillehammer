@@ -24,41 +24,22 @@ namespace Cageball.Views
             Loaded += AllCageballEventsView_Loaded;
         }
 
-        AllCageballEventsViewModel _viewModel;
+        CageballEventsViewModel _viewModel;
 
         void AllCageballEventsView_Loaded(object sender, RoutedEventArgs e)
         {
-
-            var service = new CageballService();
-            var fileUri = new Uri("Cageball;component/Content/CageballEvents.xml", UriKind.Relative);
-
-            using (var stream = Application.GetResourceStream(fileUri).Stream)
-            {
-                _viewModel = new AllCageballEventsViewModel(stream);
-                DataContext = _viewModel;           
-            }
-                 
+            _viewModel = CageballEventHelper.SetCageballEvents();
+            DataContext = _viewModel;
         }
 
 
 
         private void _cageballevents_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //Uten databinding:
-            //var listbox = (ListBox)sender;
-            //var entry = (CageballEvent)listbox.SelectedItem;
-
-            //if (entry != null)
-            //{
-            //    Uri sigedCageballEvent = new Uri("/../Views/SignedCageballEvent.xaml?id=" + entry.Id, UriKind.Relative);
-            //    NavigationService.Navigate(sigedCageballEvent);
-            //}
-
-
-            //Uten databinding:
+ 
             if (_viewModel.SelectedCageballEvent != null)
             {
-                Uri sigedCageballEvent = new Uri(String.Format("/../Views/SignedCageballEvent.xaml?id={0}&meldMeg={1}", _viewModel.SelectedCageballEvent.Id," på"), UriKind.Relative);
+                Uri sigedCageballEvent = new Uri(String.Format("/../Views/SignedCageballEventView.xaml?id={0}&signUp={1}", _viewModel.SelectedCageballEvent.Id, true), UriKind.Relative);
                 NavigationService.Navigate(sigedCageballEvent);
             }
         }

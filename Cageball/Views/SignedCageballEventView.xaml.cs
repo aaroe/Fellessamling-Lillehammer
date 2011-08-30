@@ -16,12 +16,12 @@ using Cageball.Lib.ViewModel;
 
 namespace Cageball.Views
 {
-    public partial class SignedCageballEvent : PhoneApplicationPage
+    public partial class SignedCageballEventView : PhoneApplicationPage
     {
-        int?  id;
-        string påEllerAv;
+        int id;
+        bool signUp;
 
-        public SignedCageballEvent()
+        public SignedCageballEventView()
         {
             InitializeComponent();
             Loaded += new RoutedEventHandler(SignedCageballEvent_Loaded);
@@ -31,13 +31,22 @@ namespace Cageball.Views
         void SignedCageballEvent_Loaded(object sender, RoutedEventArgs e)
         {
             id = Convert.ToInt32(NavigationContext.QueryString["id"]);
-            påEllerAv = NavigationContext.QueryString["meldMeg"];
-            SignupBtn.Content += påEllerAv;
-
-            if (id == null)
-                throw new ArgumentException();
+            
+            if (id == 0)
+                throw new ArgumentException("CageballId 0 er ikke gyldig!");
 
             
+            SetTextOnButton();
+        }
+
+        private void SetTextOnButton()
+        {
+            signUp = Convert.ToBoolean(NavigationContext.QueryString["signUp"]);
+
+            if (signUp)
+                SignupBtn.Content += " på";
+            else
+                SignupBtn.Content += " av";
         }
 
 
@@ -46,8 +55,7 @@ namespace Cageball.Views
             var cageballService = new SignedCageballEventViewModel();
                
               ResponseEntity retur;
-              bool signUp = påEllerAv ==" på";
-              retur = cageballService.SignUpForCageballEvent(id.Value,signUp);
+              retur = cageballService.SignUpForCageballEvent(id,signUp);
               responseTxt.Text = retur.Description;
               SignupBtn.IsEnabled = retur.Error;
 
