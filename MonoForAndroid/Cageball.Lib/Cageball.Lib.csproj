@@ -72,8 +72,8 @@
     <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\Model\CageballEvent.cs">
       <Link>Model\CageballEvent.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\Model\HendelseRetur.cs">
-      <Link>Model\HendelseRetur.cs</Link>
+    <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\Model\ResponseEntity.cs">
+      <Link>Model\ResponseEntity.cs</Link>
     </Compile>
     <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\ViewModel\CageballEventsViewModel.cs">
       <Link>ViewModel\CageballEventsViewModel.cs</Link>
@@ -84,7 +84,6 @@
     <Compile Include="..\..\..\WhindowsPhone\CageballAcando\Cageball.Lib\ViewModel\ViewModelBase.cs">
       <Link>ViewModel\ViewModelBase.cs</Link>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />

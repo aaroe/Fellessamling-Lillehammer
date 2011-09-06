@@ -91,7 +91,6 @@
     <Compile Include="Views\AllCageballEventsView.xaml.cs">
       <DependentUpon>AllCageballEventsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\CageballEventHelper.cs" />
     <Compile Include="Views\MyCageballEventsView.xaml.cs">
       <DependentUpon>MyCageballEventsView.xaml</DependentUpon>
     </Compile>
@@ -123,9 +122,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
-    <None Include="Properties\WMAppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="acandologo.png" />
     <Content Include="ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -133,6 +135,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Resource Include="Content\CageballEvents.xml" />
+    <Resource Include="cageball.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>

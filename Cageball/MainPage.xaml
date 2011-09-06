@@ -12,15 +12,19 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True"
+    >
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="Cageball.png" Opacity="0.2" />
+        </Grid.Background>
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="PageOwner" Text="Acando" Style="{StaticResource PhoneTextNormalStyle}"/>
@@ -31,15 +35,20 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
           
             <StackPanel x:Name="ButtonPanel" Margin="12,17,0,28">
-                <Button Name="AllCageballEventsBtn" Click="AllCageballEventsBtn_Click">Alle treninger</Button>
-                <Button Name="MyCageballEvents" Click="MyCageballEvents_Click">Mine treninger</Button>
-                <Button Name="CreateCageballEvent" Click="CreateCageballEvent_Click">Opprett trening</Button>
+                <Button Height="100" Name="AllCageballEventsBtn" Click="AllCageballEventsBtn_Click">Alle treninger</Button>
+                <Button Height="100" Name="MyCageballEvents" Click="MyCageballEvents_Click">Mine treninger</Button>
+                <Button Height="100" Name="CreateCageballEvent" Click="CreateCageballEvent_Click">Opprett trening</Button>
                 <!--<HyperlinkButton Name="AllCageballEventsBtn" Content="Alle treninger" Height="50" Name="hyperlinkButton1" Width="200" />
                 <HyperlinkButton Name="MyCageballEventsBtn" Content="Mine treninger" Height="50" Name="hyperlinkButton2" Width="200" />
                 <HyperlinkButton name ="CreateCageballEventBtn" Content="Opprett trening" Height="50" Name="hyperlinkButton3" Width="200" />-->
             </StackPanel>
-       
         </Grid>
+        <Grid x:Name="Logo" Grid.Row="2" Margin="50,0,0,30">
+            <Grid.Background>
+                <ImageBrush ImageSource="acandologo.png" Opacity="0.2" Stretch="Uniform" AlignmentX="Left" />
+            </Grid.Background>
+        </Grid>
+
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->

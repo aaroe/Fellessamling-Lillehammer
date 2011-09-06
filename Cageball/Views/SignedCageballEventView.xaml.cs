@@ -1,38 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
-using Microsoft.Phone.Controls;
-using Cageball.Lib.DataServices;
 using Cageball.Lib.Model;
 using Cageball.Lib.ViewModel;
 
 namespace Cageball.Views
 {
-    public partial class SignedCageballEventView : PhoneApplicationPage
+    public partial class SignedCageballEventView
     {
-        int id;
-        bool signUp;
+        int _id;
+        bool _signUp;
 
         public SignedCageballEventView()
         {
             InitializeComponent();
-            Loaded += new RoutedEventHandler(SignedCageballEvent_Loaded);
+            Loaded += SignedCageballEventLoaded;
            
         }
 
-        void SignedCageballEvent_Loaded(object sender, RoutedEventArgs e)
+        void SignedCageballEventLoaded(object sender, RoutedEventArgs e)
         {
-            id = Convert.ToInt32(NavigationContext.QueryString["id"]);
+            _id = Convert.ToInt32(NavigationContext.QueryString["id"]);
             
-            if (id == 0)
+            if (_id == 0)
                 throw new ArgumentException("CageballId 0 er ikke gyldig!");
 
             
@@ -41,34 +30,23 @@ namespace Cageball.Views
 
         private void SetTextOnButton()
         {
-            signUp = Convert.ToBoolean(NavigationContext.QueryString["signUp"]);
+            _signUp = Convert.ToBoolean(NavigationContext.QueryString["signUp"]);
 
-            if (signUp)
+            if (_signUp)
                 SignupBtn.Content += " på";
             else
                 SignupBtn.Content += " av";
         }
 
 
-        private void SignupBtn_Click(object sender, RoutedEventArgs e)
+        private void SignupBtnClick(object sender, RoutedEventArgs e)
         {
             var cageballService = new SignedCageballEventViewModel();
-               
-              ResponseEntity retur;
-              retur = cageballService.SignUpForCageballEvent(id,signUp);
+
+            ResponseEntity retur = cageballService.SignUpForCageballEvent(_id,_signUp);
               responseTxt.Text = retur.Description;
               SignupBtn.IsEnabled = retur.Error;
 
-        }
-
-        private void BackBtn_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.GoBack();
-        }
-
-        private void MenyBtn_Click(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }

@@ -33,7 +33,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="/../Cageball.png" Opacity="0.2" />
+        </Grid.Background>
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle" Text="Acando" Style="{StaticResource PhoneTextNormalStyle}"/>
@@ -46,9 +48,9 @@
                 <ListBox ScrollViewer.VerticalScrollBarVisibility="Visible" 
                          Margin="8,8,8,8" 
                          Name="_cageballevents" 
-                         SelectionChanged="_cageballevents_SelectionChanged" 
+                         SelectionChanged="CageballeventsSelectionChanged" 
                          ItemContainerStyle="{StaticResource ListBoxItemStyle1}"
-                         ItemsSource="{Binding Path=CageballEvents}"
+                         ItemsSource="{Binding Path=CageballEvents, Mode=TwoWay}"
                          SelectedItem="{Binding Path=SelectedCageballEvent, Mode=TwoWay}"         
                 />
                 <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
